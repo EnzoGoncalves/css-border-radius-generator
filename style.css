@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    max-width: 23rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 3rem;
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+body .box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(118, 165, 42);
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+body div:nth-child(3){
+    width: max-content;
+    background-color: #111;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 1rem;
+    border-radius: 4px;
+}
+
+body div:nth-child(3):hover {
+    text-decoration: underline;
+}
+
+body div:nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+img {
+    width: 25px;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+form input {
+    padding: .5rem .25rem;
+    outline: none;
+    width: 100%;
+    width: 45%;
+}
+
+form select {
+    width: 30%;
+    padding: .25rem;
+    outline: none;
+}
+
+form input:focus {
+    border: 2px solid rgb(118, 165, 42);
+}
+
+@media (max-width: 400px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input {
+        width: 70%;
+    }
+}
